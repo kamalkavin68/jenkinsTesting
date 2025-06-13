@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/YOUR_USERNAME/spring-cloud-config-repo
+          default-label: main   # Or "master" if your branch is named that
